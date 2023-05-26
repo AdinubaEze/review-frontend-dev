@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Reviews And Rating</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body> 
+
+     <input type="checkbox" id="toggle-menu">
+     <label for="toggle-menu" class="overlay"></label>
+    <aside class="sidebar">
+      <section class="logo__container">
+        <span class="logo"><i class="fa-brands fa-slack"></i></span>
+        <h1>Adinuba</h1>
+      </section>
+
+      <section class="search__container">
+          <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="search" placeholder="Search">
+      </section>
+
+      <section class="tab__container">
+          <div class="tab__column active">
+             <div class="tab__item">
+               <span class="icon left"><i class="fa-solid fa-flag"></i></span>
+               <h3>Page Manner</h3>
+               <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+             </div>
+             <div class="tab__dropdown">
+                <div class="drop__wrapper">
+                    <div class="tab__dropdown__item">
+                        <h4>Business Information</h4>
+                    </div>
+                    <div class="tab__dropdown__item">
+                        <h4>Call to Action</h4>
+                    </div>
+                    <div class="tab__dropdown__item">
+                        <h4>Activities feed</h4>
+                    </div>
+                    <div class="tab__dropdown__item">
+                        <h4>Special Offer</h4>
+                    </div>
+                    <div class="tab__dropdown__item active">
+                        <h4>Reviews</h4>
+                    </div>
+                </div>
+             </div>
+          </div>
+
+          <div class="tab__column">
+              <div class="tab__item">
+                <span class="icon"><i class="fa-solid fa-shop"></i></span>
+                <h3>My Shop</h3>
+                <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+          </div>
+          <div class="tab__column">
+              <div class="tab__item">
+                <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+                <h3>Business Analytic</h3>
+                <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+          </div>
+          <div class="tab__column">
+              <div class="tab__item">
+                <span class="icon"><i class="fa-solid fa-rectangle-ad"></i></span>
+                <h3>Promotion</h3>
+                <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+          </div>
+          <div class="tab__column">
+              <div class="tab__item">
+                <span class="icon"><i class="fa-solid fa-message"></i></span>
+                <h3>Message</h3>
+                <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+          </div>
+          <div class="tab__column">
+              <div class="tab__item">
+                <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                <h3>Settings</h3>
+                <span class="icon expand"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+          </div>
+
+      </section>
+
+
+
+      <section class="user__container">
+         <div class="profile">
+            <img src="images/pic-3.jpeg" alt="">
+         </div>
+         <div class="detail">
+            <h3 class="name">Angela Monic</h3>
+            <p class="text__muted">Angela@gmail.com</p>
+         </div>
+         <a class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+         </a>
+      </section>
+    </aside>
+
+
+
+    <main>
+        <!-- navigation -->
+        <nav class="navigation">
+            <div class="nav__item">
+                <div class="theme__toggle">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa fa-sun active" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="nav_item">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="nav__item">
+                <i class="fa-regular fa-circle-question"></i>
+            </div>
+
+            <div class="nav__item">
+                <button type="button" class="btn">View Shop</button>
+            </div>
+
+            <div class="nav__item menu">
+                <label for="toggle-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+
+
+        <!-- Reviews header -->
+        <section class="reviews__header">
+            <div class="header__row">
+                <h2>Reviews</h2>
+                <button type="button" class="btn">Jan. 2023 -  May 2023</button>
+            </div>
+            <div class="header__row reviews__record__container">
+                <div class="header__box">
+                    <h3>Total reviews</h3>
+                    <div class="column">
+                        <h2>12.1k</h2>
+                        <button type="button" class="btn">23%</button>
+                    </div>
+                    <p class="text__muted">Growth in reviews on this year</p>
+                </div>
+
+                <div class="header__box">
+                    <h3>Average Rating</h3>
+                    <div class="column">
+                        <h2>4.5</h2>
+                        <div class="stars__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                    </div>
+                    <p class="text__muted">Average rating on this year</p>
+                </div>
+
+                <div class="header__box range__wrapper">
+                    <div class="range__container">
+                        <div class="range__item">
+                            <div class="range__star__label">
+                                <span class="star star__muted"><i class="fa-solid fa-star"></i></span>
+                                <p>5</p>
+                            </div>
+                            <div class="range__line"><div class="line" style="background: rgb(61,182,160);width: 80%;"></div></div>
+                            <p class="range__total">3.0k</p>
+                        </div>
+                  
+                        <div class="range__item">
+                            <div class="range__star__label">
+                                <span class="star star__muted"><i class="fa-solid fa-star"></i></span>
+                                <p>4</p>
+                            </div>
+                            <div class="range__line"><div class="line" style="background: rgb(221,132,252);width: 50%;"></div></div>
+                            <p class="range__total">1.1k</p>
+                        </div>
+                    
+                        <div class="range__item">
+                            <div class="range__star__label">
+                                <span class="star star__muted"><i class="fa-solid fa-star"></i></span>
+                                <p>3</p>
+                            </div>
+                            <div class="range__line"><div class="line" style="background: rgb(242,190,78);width: 30%;"></div></div>
+                            <p class="range__total">700</p>
+                        </div>
+                    
+                        <div class="range__item">
+                            <div class="range__star__label">
+                                <span class="star star__muted"><i class="fa-solid fa-star"></i></span>
+                                <p>2</p>
+                            </div>
+                            <div class="range__line"><div class="line" style="background: rgb(62,195,236);width: 20%;"></div></div>
+                            <p class="range__total">200</p>
+                        </div>
+                   
+                        <div class="range__item">
+                            <div class="range__star__label">
+                                <span class="star star__muted"><i class="fa-solid fa-star"></i></span>
+                                <p>1</p>
+                            </div>
+                            <div class="range__line"><div class="line" style="background: rgb(248,124,48);width: 5%;"></div></div>
+                            <p class="range__total">2</p>
+                        </div>
+            
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="review__content">
+            <!-- Start review card -->
+            <div class="review__card">
+                <div class="reviewer__info__container">
+                    <div class="profile">
+                        <img src="images/pic-1.jpeg" alt="">
+                    </div>
+                   <div class="details">
+                     <h3 class="name">Emmanuel Eze</h3>
+                     <p class="text__muted">Total spend: <span class="value">$500</span></p>
+                     <p class="text__muted">Total Review: <span class="value">20</span></p>
+                   </div>
+                </div>
+
+                <div class="review__info">
+                    <div class="top">
+                        <div class="star__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="date text__muted">
+                            30-1-2023
+                        </o>
+                    </div>
+                    <div class="middle">
+                        <p class="text__muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, necessitatibus inventore assumenda expedita praesentium tempora quaerat sapiente? Inventore animi necessitatibus quia aliquam quae velit! Facilis quam culpa doloremque repellendus ea.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn">Public Comment</button>
+                        <button type="button" class="btn">Direct Message</button>
+                        <button type="button" class="btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End review card -->
+            <!-- Start review card -->
+            <div class="review__card">
+                <div class="reviewer__info__container">
+                    <div class="profile">
+                        <img src="images/pic-2.jpeg" alt="">
+                    </div>
+                   <div class="details">
+                     <h3 class="name">Favour Adaeze</h3>
+                     <p class="text__muted">Total spend: <span class="value">$500</span></p>
+                     <p class="text__muted">Total Review: <span class="value">20</span></p>
+                   </div>
+                </div>
+
+                <div class="review__info">
+                    <div class="top">
+                        <div class="star__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="date text__muted">
+                            30-1-2023
+                        </o>
+                    </div>
+                    <div class="middle">
+                        <p class="text__muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, necessitatibus inventore assumenda expedita praesentium tempora quaerat sapiente? Inventore animi necessitatibus quia aliquam quae velit! Facilis quam culpa doloremque repellendus ea.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn">Public Comment</button>
+                        <button type="button" class="btn">Direct Message</button>
+                        <button type="button" class="btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End review card -->
+            <!-- Start review card -->
+            <div class="review__card">
+                <div class="reviewer__info__container">
+                    <div class="profile">
+                        <img src="images/pic-4.jpeg" alt="">
+                    </div>
+                   <div class="details">
+                     <h3 class="name">Ben Johnson</h3>
+                     <p class="text__muted">Total spend: <span class="value">$500</span></p>
+                     <p class="text__muted">Total Review: <span class="value">20</span></p>
+                   </div>
+                </div>
+
+                <div class="review__info">
+                    <div class="top">
+                        <div class="star__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="date text__muted">
+                            30-1-2023
+                        </o>
+                    </div>
+                    <div class="middle">
+                        <p class="text__muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, necessitatibus inventore assumenda expedita praesentium tempora quaerat sapiente? Inventore animi necessitatibus quia aliquam quae velit! Facilis quam culpa doloremque repellendus ea.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn">Public Comment</button>
+                        <button type="button" class="btn">Direct Message</button>
+                        <button type="button" class="btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End review card -->
+            <!-- Start review card -->
+            <div class="review__card">
+                <div class="reviewer__info__container">
+                    <div class="profile">
+                        <img src="images/pic-5.jpeg" alt="">
+                    </div>
+                   <div class="details">
+                     <h3 class="name">Jeni Andy</h3>
+                     <p class="text__muted">Total spend: <span class="value">$500</span></p>
+                     <p class="text__muted">Total Review: <span class="value">20</span></p>
+                   </div>
+                </div>
+
+                <div class="review__info">
+                    <div class="top">
+                        <div class="star__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="date text__muted">
+                            30-1-2023
+                        </o>
+                    </div>
+                    <div class="middle">
+                        <p class="text__muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, necessitatibus inventore assumenda expedita praesentium tempora quaerat sapiente? Inventore animi necessitatibus quia aliquam quae velit! Facilis quam culpa doloremque repellendus ea.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn">Public Comment</button>
+                        <button type="button" class="btn">Direct Message</button>
+                        <button type="button" class="btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End review card -->
+            <!-- Start review card -->
+            <div class="review__card">
+                <div class="reviewer__info__container">
+                    <div class="profile">
+                        <img src="images/pic-6.jpeg" alt="">
+                    </div>
+                   <div class="details">
+                     <h3 class="name">Danel Olu</h3>
+                     <p class="text__muted">Total spend: <span class="value">$500</span></p>
+                     <p class="text__muted">Total Review: <span class="value">20</span></p>
+                   </div>
+                </div>
+
+                <div class="review__info">
+                    <div class="top">
+                        <div class="star__container">
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star"></i></span>
+                            <span class="star"><i class="fa-solid fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="date text__muted">
+                            30-1-2023
+                        </o>
+                    </div>
+                    <div class="middle">
+                        <p class="text__muted">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, necessitatibus inventore assumenda expedita praesentium tempora quaerat sapiente? Inventore animi necessitatibus quia aliquam quae velit! Facilis quam culpa doloremque repellendus ea.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <button type="button" class="btn">Public Comment</button>
+                        <button type="button" class="btn">Direct Message</button>
+                        <button type="button" class="btn"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End review card -->
+
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
